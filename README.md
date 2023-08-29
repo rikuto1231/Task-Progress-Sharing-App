@@ -1,1 +1,1 @@
-# Task-Progress-Sharing-App
+# タスク進捗度共有アプリ
