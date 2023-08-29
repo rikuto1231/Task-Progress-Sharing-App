@@ -1,0 +1,216 @@
+body {
+    background-image: url('../img/night_sky.jpg');
+    overflow-x: hidden;
+    height: auto;
+}
+
+header {
+    position: fixed; /* Headerを固定する */
+    top: 0; /* ページの上端に固定 */
+    left: 0; /* ページの左端に固定 */
+    width: 100%; /* ページ幅いっぱいに広げる */
+    padding: 10px; /* 上下左右の余白 */
+    z-index: 999; /* 他の要素よりも前面に表示 */
+}
+
+
+
+.sidebar {
+    width: 0; /* 初期状態では非表示 */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s; /* トランジション時間 */
+    z-index: 9999;
+}
+
+
+.sidebar p {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.sidebar.open {
+    width: 80%; /* 展開時の幅 */
+}
+
+
+#toggleButton{
+    border-radius: 50%; /* 円形のボタン */
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#closeButton{
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 円形のボタン */
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#listButton{
+    position: absolute;
+    right: 18%;
+    margin-top: 8px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#addButton{
+    position: absolute;
+    right: 5%;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#progressChart {
+    background-color: rgba(255, 255, 255, 0.769);
+    position: absolute;
+    top: 25%; /* 上端を画面の70%の位置に配置 */
+    width: 100%;
+}
+
+.Progress{
+    position: absolute;
+    top: 80%;
+    left: 0; /* 左端に配置 */
+    right: 0; /* 右端に配置 */
+    text-align: center;
+    color: #ffffff;
+}
+
+.Progress h1{
+    
+}
+
+.Progress hr{
+    width: 90%;
+}
+
+
+#task_name{
+    width: 100%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    color: #ffffffe6;
+}
+
+#name_hr{
+    width: 85%;
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    border: 2px solid #ffffffd7;
+}
+
+#next{
+    position: absolute;
+    height: 5%;
+    width: 30%;
+    left: 60%;
+    top: 165%; /* 上端を画面の70%の位置に配置 */
+
+}
+
+#prev{
+    position: absolute;
+    height: 5%;
+    width: 30%;
+    left: 10%;
+    top: 165%; /* 上端を画面の70%の位置に配置 */
+}
+
+
+#current_date{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 105%;
+    text-align: center;
+    color: #ffffffe7;
+}
+
+
+#calendar {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 50%; /* 左端を画面の中央に配置 */
+    top: 115%; /* 上端を画面の70%の位置に配置 */
+    transform: translateX(-45%); /* 左マージンを自動計算して中央配置 */
+}
+
+
+.calendar_td {
+    width: 40px; /* セルの幅を調整 */
+    height: 50px; /* セルの高さを調整 */
+    font-size: 16px; /* セル内の文字サイズを調整 */
+    background-color: #ffffff; /* セルの背景色を設定 */
+    /* その他のスタイルプロパティを追加 */
+}
+
+
+section {
+    margin: 10px;
+}
+
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid #000000;
+    padding: 5px;
+    text-align: center;
+}
+
+td:first-child {
+    color: red;
+}
+
+td:last-child {
+    color: rgb(0, 64, 255);
+}
+
+td.is-disabled {
+    color: #878787;
+}
+
+#registration{
+    position: absolute;
+    top: 170%;
+    height: 20%;
+    left: 0; /* 左端に配置 */
+    right: 0; /* 右端に配置 */
+    text-align: center;
+    color: #ffffff;
+}
+
+#registration p{
+    font-size:25px;
+}
+
+#registration button{
+    width: 50%;
+    height: 20%;
+    background-color: #359ee9;
+    border-color: #ffffff;
+}
+
+#registration input{
+    width: 10%;
+}
