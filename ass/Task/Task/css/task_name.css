@@ -1,0 +1,27 @@
+.task_name {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top:50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.task_name::placeholder {
+    text-align: center;
+    color: rgb(63, 162, 189);
+}
+
+
+#submit_next {
+    width: 200px;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+body {
+    text-align: center;
+}
