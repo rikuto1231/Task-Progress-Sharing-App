@@ -10,13 +10,13 @@
                     header("Location: ../task_value.php"); 
                     break;
                 case 'task_value';
-                    header("Location: ../Task_home.php"); 
+                    header("Location: ../start_date.php"); 
                     break;
                 case 'start_date';
-                    header("Location: ../Task_home.php"); 
+                    header("Location: ../finish_date.php"); 
                     break;
                 case 'finish_date';
-                    header("Location: ../Task_home.php"); 
+                    header("Location: ../Task_background.php"); 
                     break;
                 case 'Task_background';
                     header("Location: ../Task_home.php"); 

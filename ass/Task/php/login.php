@@ -36,7 +36,7 @@ class Main {
 $host = 'mysql214.phy.lolipop.lan';
 $dbname = 'LAA1517437-shop';
 $user = 'LAA1517437';
-$pass = '＊＊＊＊';
+$pass = 'Pass1015';
 
 $main = new Main($host, $dbname, $user, $pass);
 

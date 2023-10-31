@@ -36,7 +36,7 @@ class Main {
 $host = 'mysql214.phy.lolipop.lan';
 $dbname = 'LAA1517437-shop';
 $user = 'LAA1517437';
-$pass = '＊＊＊＊';
+$pass = 'Pass1015';
 
 $main = new Main($host, $dbname, $user, $pass);
 
@@ -64,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         // 登録成功メッセージを表示
         echo "新しいユーザーが登録されました。";
+        //button出力
     } catch (PDOException $e) {
         if ($e->getCode() == '23000' && strpos($e->getMessage(), 'Duplicate entry') !== false) {
             // エラーコード 23000 は一意性制約違反を表します
